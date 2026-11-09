@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Experiencias"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#F7F5F0">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24,30"
+                             Spacing="22"
+                             HorizontalOptions="Center">
+
+            <!-- CABEÇALHO -->
+            <Grid ColumnDefinitions="52,*"
+                  ColumnSpacing="13">
+
+                <Border Grid.Column="0"
+                        BackgroundColor="#243B53"
+                        StrokeThickness="0"
+                        HeightRequest="52"
+                        WidthRequest="52"
+                        Padding="0"
+                        StrokeShape="RoundRectangle 14">
+
+                    <Label Text="A"
+                           FontSize="29"
+                           FontAttributes="Bold"
+                           TextColor="#D9B77E"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+
+                </Border>
+
+                <VerticalStackLayout Grid.Column="1"
+                                     Spacing="3"
+                                     VerticalOptions="Center">
+
+                    <Label Text="AURORA HOTEL"
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           CharacterSpacing="1.5"
+                           TextColor="#243B53"/>
+
+                    <Label Text="HOSPEDAGEM E CONFORTO"
+                           FontSize="9"
+                           CharacterSpacing="1.5"
+                           TextColor="#A18455"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+            <BoxView HeightRequest="1"
+                     Color="#E5DED2"/>
+
+            <!-- APRESENTAÇÃO -->
+            <VerticalStackLayout Spacing="8">
+
+                <Label Text="DESCUBRA O AURORA"
+                       FontSize="11"
+                       CharacterSpacing="2"
+                       FontAttributes="Bold"
+                       TextColor="#A18455"/>
+
+                <Label Text="Muito além de uma hospedagem."
+                       FontSize="27"
+                       FontAttributes="Bold"
+                       TextColor="#243B53"
+                       LineBreakMode="WordWrap"/>
+
+                <Label Text="Conheça nossos ambientes e descubra tudo o que preparamos para tornar sua estadia especial."
+                       FontSize="14"
+                       TextColor="#777D83"
+                       LineBreakMode="WordWrap"/>
+
+            </VerticalStackLayout>
+
+            <!-- IMAGEM PRINCIPAL -->
+            <Image Source="hotel.jpg"
+                   HeightRequest="190"
+                   Aspect="AspectFill"
+                   HorizontalOptions="Fill"/>
+
+            <!-- PISCINA -->
+            <VerticalStackLayout Spacing="9">
+
+                <Label Text="01 • RELAXAMENTO"
+                       FontSize="10"
+                       CharacterSpacing="2"
+                       FontAttributes="Bold"
+                       TextColor="#A18455"/>
+
+                <Label Text="Piscina"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#243B53"/>
+
+                <Image Source="piscina.jpg"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Fill"/>
+
+                <Label Text="Aproveite momentos de tranquilidade em um ambiente preparado para seu descanso."
+                       FontSize="13"
+                       TextColor="#777D83"/>
+
+            </VerticalStackLayout>
+
+            <BoxView HeightRequest="1"
+                     Color="#E5DED2"/>
+
+            <!-- RESTAURANTE -->
+            <VerticalStackLayout Spacing="9">
+
+                <Label Text="02 • GASTRONOMIA"
+                       FontSize="10"
+                       CharacterSpacing="2"
+                       FontAttributes="Bold"
+                       TextColor="#A18455"/>
+
+                <Label Text="Restaurante"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#243B53"/>
+
+                <Image Source="restaurante.jpg"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Fill"/>
+
+                <Label Text="Um espaço acolhedor para desfrutar de refeições e compartilhar bons momentos."
+                       FontSize="13"
+                       TextColor="#777D83"/>
+
+            </VerticalStackLayout>
+
+            <BoxView HeightRequest="1"
+                     Color="#E5DED2"/>
+
+            <!-- SPA E DESCANSO -->
+            <VerticalStackLayout Spacing="9">
+
+                <Label Text="03 • BEM-ESTAR"
+                       FontSize="10"
+                       CharacterSpacing="2"
+                       FontAttributes="Bold"
+                       TextColor="#A18455"/>
+
+                <Label Text="Spa e descanso"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#243B53"/>
+
+                <Image Source="spa.jpg"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Fill"/>
+
+                <Label Text="Um ambiente pensado para proporcionar conforto, serenidade e bem-estar."
+                       FontSize="13"
+                       TextColor="#777D83"/>
+
+            </VerticalStackLayout>
+
+            <BoxView HeightRequest="1"
+                     Color="#E5DED2"/>
+
+            <!-- ÁREA DE LAZER -->
+            <VerticalStackLayout Spacing="9">
+
+                <Label Text="04 • MOMENTOS ESPECIAIS"
+                       FontSize="10"
+                       CharacterSpacing="2"
+                       FontAttributes="Bold"
+                       TextColor="#A18455"/>
+
+                <Label Text="Área de lazer"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#243B53"/>
+
+                <Image Source="lazer.jpg"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Fill"/>
+
+                <Label Text="Espaços agradáveis para aproveitar sua estadia e criar boas lembranças."
+                       FontSize="13"
+                       TextColor="#777D83"/>
+
+            </VerticalStackLayout>
+
+            <!-- MENSAGEM FINAL -->
+            <Border BackgroundColor="#243B53"
+                    StrokeThickness="0"
+                    Padding="20"
+                    StrokeShape="RoundRectangle 15">
+
+                <VerticalStackLayout Spacing="9">
+
+                    <Label Text="AURORA HOTEL"
+                           FontSize="11"
+                           CharacterSpacing="2"
+                           FontAttributes="Bold"
+                           TextColor="#D9B77E"/>
+
+                    <Label Text="Sua experiência começa aqui."
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+
+                    <Label Text="Será um prazer fazer parte dos seus melhores momentos."
+                           FontSize="13"
+                           TextColor="#E3E8ED"/>
+
+                </VerticalStackLayout>
+
+            </Border>
+
+            <!-- VOLTAR -->
+            <Button Text="Voltar ao início"
+                    BackgroundColor="#243B53"
+                    TextColor="White"
+                    FontSize="14"
+                    CornerRadius="12"
+                    HeightRequest="52"
+                    HorizontalOptions="Fill"
+                    Clicked="Voltar_Clicked"/>
+
+            <!-- RODAPÉ -->
+            <Label Text="AURORA HOTEL • HOSPEDAGEM E CONFORTO"
+                   FontSize="9"
+                   CharacterSpacing="1"
+                   TextColor="#A18455"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,8,0,12"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
